@@ -408,6 +408,11 @@ a {
   position: relative;
   margin-bottom: 100px; }
 
+input[type="radio"]:focus + label,
+input[type="file"]:focus + label {
+  -webkit-box-shadow: inset 0 0 0 2px #76a7e1;
+          box-shadow: inset 0 0 0 2px #76a7e1; }
+
 .wrapper {
   background-color: #eceef4;
   counter-reset: section;
@@ -1329,6 +1334,9 @@ a {
   color: #9fa3c4;
   font-size: 1.6rem; }
 
+.trash-icon:hover {
+  color: #76a7e1; }
+
 .language__button {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1361,13 +1369,13 @@ a {
   margin: 28px 0 15px 0;
   z-index: 1;
   width: 100%;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s; }
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
   .urgent-timeline__input:focus {
     outline: none;
-    -webkit-box-shadow: 0 0 10px 0 #yellow;
-            box-shadow: 0 0 10px 0 #yellow; }
+    -webkit-box-shadow: 0 0 10px 0 #edbe76;
+            box-shadow: 0 0 10px 0 #edbe76; }
   .urgent-timeline__input:before {
     content: "";
     position: absolute;
@@ -1481,7 +1489,12 @@ a {
 
 .nav__logo {
   width: 100px;
-  height: 100px; }
+  height: 100px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  .nav__logo:hover {
+    -webkit-box-shadow: 0 0 0 5px #76a7e1;
+            box-shadow: 0 0 0 5px #76a7e1; }
 
 .urgent-timeline__input {
   -webkit-appearance: none;
@@ -1491,13 +1504,13 @@ a {
   margin: 28px 0 15px 0;
   z-index: 1;
   width: 100%;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s; }
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s; }
   .urgent-timeline__input:focus {
     outline: none;
-    -webkit-box-shadow: 0 0 10px 0 #yellow;
-            box-shadow: 0 0 10px 0 #yellow; }
+    -webkit-box-shadow: 0 0 10px 0 #edbe76;
+            box-shadow: 0 0 10px 0 #edbe76; }
   .urgent-timeline__input:before {
     content: "";
     position: absolute;
@@ -1693,3 +1706,10 @@ a {
   -webkit-flex-basis: 300px;
       -ms-flex-preferred-size: 300px;
           flex-basis: 300px; }
+
+.footer__logo {
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  .footer__logo:hover {
+    -webkit-box-shadow: 0 0 0 5px #c7ccea;
+            box-shadow: 0 0 0 5px #c7ccea; }
