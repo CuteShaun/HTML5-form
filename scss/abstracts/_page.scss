@@ -622,6 +622,10 @@
   @media screen and (max-width: 658px) {
     margin: 0;
   }
+
+  @media screen and (max-width: 527px) {
+    justify-content: center;
+  }
 }
 
 .user__input-wrapper-inner {
@@ -634,6 +638,15 @@
   margin: 50px 0 35px 0;
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 632px) {
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 550px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .user__payment-label {
@@ -643,8 +656,8 @@
   background-color: $whiteSmoke2;
   border-radius: 3px;
   cursor: pointer;
-  transition: 0.2s; 
-  min-width: 234px;
+  transition: 0.2s;
+  width: 234px;
   text-align: center;
 
   &:hover {
@@ -653,10 +666,18 @@
 
   &:not(:last-child) {
     margin-right: 20px;
+
+    @media screen and (max-width: 550px) {
+      margin-right: 0;
+    }
   }
 
-  @media (max-width: 1200px) {
+  @media screen and (max-width: 1200px) {
     margin: 10px 10px 10px 0;
+  }
+
+  @media (max-width: 550px) {
+    margin: 10px 0;
   }
 }
 

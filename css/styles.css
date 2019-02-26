@@ -1330,6 +1330,12 @@ input[type="file"]:focus + label {
   @media screen and (max-width: 658px) {
     .user__input-wrapper-outer {
       margin: 0; } }
+  @media screen and (max-width: 527px) {
+    .user__input-wrapper-outer {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .user__input-wrapper-inner {
   position: relative;
@@ -1345,6 +1351,23 @@ input[type="file"]:focus + label {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
+  @media screen and (max-width: 632px) {
+    .user__payment {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media screen and (max-width: 550px) {
+    .user__payment {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .user__payment-label {
   position: relative;
@@ -1357,16 +1380,22 @@ input[type="file"]:focus + label {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-  min-width: 234px;
+  width: 234px;
   text-align: center; }
   .user__payment-label:hover {
     -webkit-box-shadow: 2px 2px 15px -4px #6e768f;
             box-shadow: 2px 2px 15px -4px #6e768f; }
   .user__payment-label:not(:last-child) {
     margin-right: 20px; }
-  @media (max-width: 1200px) {
+    @media screen and (max-width: 550px) {
+      .user__payment-label:not(:last-child) {
+        margin-right: 0; } }
+  @media screen and (max-width: 1200px) {
     .user__payment-label {
       margin: 10px 10px 10px 0; } }
+  @media (max-width: 550px) {
+    .user__payment-label {
+      margin: 10px 0; } }
 
 .user__payment-input:checked + .user__payment-label {
   -webkit-box-shadow: inset 0 0 0 6px #76a7e1;
@@ -1889,15 +1918,13 @@ input[type="file"]:focus + label {
   .user__input--medium {
     max-width: 190px;
     min-width: 0; }
-    @media (max-width: 500px) {
-      .user__input--medium {
-        min-width: 234px; } }
   .user__input--short {
     width: 110px;
     max-width: 110px; }
     @media (max-width: 500px) {
       .user__input--short {
-        min-width: 110px; } }
+        min-width: 110px;
+        max-width: 110px; } }
   .user__input::-webkit-input-placeholder {
     color: #6e768f; }
   .user__input:-ms-input-placeholder {

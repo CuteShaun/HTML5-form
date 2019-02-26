@@ -21,7 +21,6 @@
   }
 }
 
-
 .user__input {
   min-height: 53px;
   min-width: 250px;
@@ -42,18 +41,15 @@
   &--medium {
     max-width: 190px;
     min-width: 0;
-
-    @media (max-width: 500px) {
-      min-width: 234px;
-    }
   }
 
   &--short {
     width: 110px;
     max-width: 110px;
 
-    @media(max-width: 500px) {
+    @media (max-width: 500px) {
       min-width: 110px;
+      max-width: 110px;
     }
   }
 
@@ -79,4 +75,3 @@
     }
   }
 }
-
