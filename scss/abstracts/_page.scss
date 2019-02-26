@@ -609,6 +609,13 @@
   @include sectionNum();
 }
 
+.user__card {
+  @media screen and(max-width: 410px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .user__text {
   display: block;
   margin-bottom: 45px;
