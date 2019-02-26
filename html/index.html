@@ -20,54 +20,62 @@
         <main class="inner-wrapper">
           <section class="section order-detail">
             <div class="order">
-              <h2 class="order__title secondary-heading">your order</h2>
-              <ul class="order__list">
-                <li class="order__list-item order__list-item--docs">
-                  <h3 class="tertiary-heading">items</h3>
-                  <span class="order__text">2 documents</span>
-                </li>
-                <li class="order__list-item order__list-item--lang">
-                  <h3 class="tertiary-heading">details</h3>
-                  <span class="order__text">2 languages</span>
-                </li>
-                <li class="order__list-item order__list-item--price">
-                  <h3 class="tertiary-heading">price</h3>
-                  <span class="order__text">$ 696.06</span>
-                </li>
-                <li class="order__list-item order__list-item--time">
-                  <h3 class="tertiary-heading">delivery</h3>
-                  <span class="order__text">48 hours*</span>
-                </li>
-              </ul>
-            </div>
-            <div class="button-box">
-              <button
-                class="btn btn-turq button-box__item--1"
-                form="translate"
-                type="submit"
-              >
-                place order
-              </button>
-              <button
-                class="btn btn-grey-upper-text button-box__item--2"
-                type="button"
-              >
-                print a quote
-              </button>
+              <div class="order__item order__item--1">
+                <div class="order__table">
+                  <h2 class="order__title secondary-heading">your order</h2>
+                  <ul class="order__list">
+                    <li class="order__list-item order__list-item--docs">
+                      <h3 class="tertiary-heading">items</h3>
+                      <span class="order__text">2 documents</span>
+                    </li>
+                    <li class="order__list-item order__list-item--lang">
+                      <h3 class="tertiary-heading">details</h3>
+                      <span class="order__text">2 languages</span>
+                    </li>
+                    <li class="order__list-item order__list-item--price">
+                      <h3 class="tertiary-heading">price</h3>
+                      <span class="order__text">$ 696.06</span>
+                    </li>
+                    <li class="order__list-item order__list-item--time">
+                      <h3 class="tertiary-heading">delivery</h3>
+                      <span class="order__text">48 hours*</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="button-box">
+                  <button
+                    class="btn btn-turq button-box__item--1"
+                    form="translate"
+                    type="submit"
+                  >
+                    place order
+                  </button>
+                  <button
+                    class="btn btn-grey-upper-text button-box__item--2"
+                    type="button"
+                  >
+                    print a quote
+                  </button>
+                </div>
+              </div>
             </div>
             <div class="help">
-              <h2 class="help__title secondary-heading">
-                <span class="help__icon fa fa-life-ring"></span>help center
-              </h2>
-              <p class="help__text">
-                if you need assistance while placing your order, contact one of
-                our beloved Project Manager by phone or email.
-              </p>
-              <div class="help__link-box">
-                <a class="help__link" href="tel:+9710555555">+971(0)555 555</a>
-                <a class="help__link" href="mailto:help@qtest.com"
-                  >help@qtest.com</a
-                >
+              <div class="help__item">
+                <h2 class="help__title secondary-heading">
+                  <span class="help__icon fa fa-life-ring"></span>help center
+                </h2>
+                <p class="help__text">
+                  if you need assistance while placing your order, contact one
+                  of our beloved Project Manager by phone or email.
+                </p>
+                <div class="help__link-box">
+                  <a class="help__link" href="tel:+9710555555"
+                    >+971(0)555 555</a
+                  >
+                  <a class="help__link" href="mailto:help@qtest.com"
+                    >help@qtest.com</a
+                  >
+                </div>
               </div>
             </div>
           </section>
@@ -163,68 +171,84 @@
                 </div>
 
                 <div class="documents__table">
-                  <div class="documents__name">
-                    <h5 class="fifth-heading">
-                      File name
-                    </h5>
+                  <div
+                    class="documents__table-wrapper documents__table-wrapper--1"
+                  >
+                    <div
+                      class="documents__table-item documents__table-item--1 documents__name"
+                    >
+                      <h5 class="fifth-heading">
+                        File name
+                      </h5>
 
-                    <span class="documents__text">
-                      <span class="documents__icon fa fa-file-text"></span>
-                      business_operations.docx
-                    </span>
-
-                    <span class="documents__text">
-                      <span class="documents__icon fa fa-file-text"></span>
-                      business_financial.docx
-                    </span>
-                  </div>
-
-                  <div class="documents__size">
-                    <h5 class="fifth-heading">
-                      File size
-                    </h5>
-
-                    <span class="documents__text">
-                      78kb
-                    </span>
-
-                    <span class="documents__text">
-                      26kb
-                    </span>
-                  </div>
-
-                  <div class="documents__words">
-                    <h5 class="fifth-heading">
-                      Number of words
-                    </h5>
-
-                    <span class="documents__text">
-                      2,326
-                    </span>
-
-                    <span class="documents__text">
-                      842
-                    </span>
-                  </div>
-
-                  <div class="documents__remove">
-                    <h5 class="fifth-heading">
-                      Remove
-                    </h5>
-
-                    <button class="trash-btn documents__button" type="button">
-                      <span
-                        class="documents__text trash-icon documents__icon fa fa-trash"
-                      >
+                      <span class="documents__text">
+                        <span class="documents__icon fa fa-file-text"></span>
+                        business_operations.docx
                       </span>
-                    </button>
 
-                    <button class="trash-btn documents__button" type="button">
-                      <span
-                        class="documents__text trash-icon documents__icon fa fa-trash"
-                      >
+                      <span class="documents__text">
+                        <span class="documents__icon fa fa-file-text"></span>
+                        business_financial.docx
                       </span>
-                    </button>
+                    </div>
+
+                    <div
+                      class="documents__table-item documents__table-item--2 documents__size"
+                    >
+                      <h5 class="fifth-heading">
+                        File size
+                      </h5>
+
+                      <span class="documents__text">
+                        78kb
+                      </span>
+
+                      <span class="documents__text">
+                        26kb
+                      </span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="documents__table-wrapper documents__table-wrapper--2"
+                  >
+                    <div
+                      class="documents__table-item documents__table-item--3 documents__words"
+                    >
+                      <h5 class="fifth-heading">
+                        Number of words
+                      </h5>
+
+                      <span class="documents__text">
+                        2,326
+                      </span>
+
+                      <span class="documents__text">
+                        842
+                      </span>
+                    </div>
+
+                    <div
+                      class="documents__table-item documents__table-item--4 documents__remove"
+                    >
+                      <h5 class="fifth-heading">
+                        Remove
+                      </h5>
+
+                      <button class="trash-btn documents__button" type="button">
+                        <span
+                          class="documents__text trash-icon documents__icon fa fa-trash"
+                        >
+                        </span>
+                      </button>
+
+                      <button class="trash-btn documents__button" type="button">
+                        <span
+                          class="documents__text trash-icon documents__icon fa fa-trash"
+                        >
+                        </span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -583,31 +607,35 @@
               </section>
 
               <section class="section terms">
-                <input
-                  class="terms__input "
-                  type="checkbox"
-                  name="rules"
-                  id="conditions"
-                  required
-                />
-                <label class="terms__label" for="conditions">
-                  I agree to the
-                  <a class="terms__link" href="#">Terms & Conditions</a>
-                </label>
+                <div class="terms__item terms__item--1">
+                  <input
+                    class="terms__input "
+                    type="checkbox"
+                    name="rules"
+                    id="conditions"
+                    required
+                  />
+                  <label class="terms__label" for="conditions">
+                    I agree to the
+                    <a class="terms__link" href="#">Terms & Conditions</a>
+                  </label>
+                </div>
 
-                <button
-                  class="terms__btn terms__btn--1 btn btn-turq"
-                  form="translate"
-                  type="submit"
-                >
-                  place order
-                </button>
-                <button
-                  class="terms__btn terms__btn--2 btn btn-grey-upper-text"
-                  type="button"
-                >
-                  print a quote
-                </button>
+                <div class="terms__item terms__item--2">
+                  <button
+                    class="terms__btn terms__btn--1 btn btn-turq"
+                    form="translate"
+                    type="submit"
+                  >
+                    place order
+                  </button>
+                  <button
+                    class="terms__btn terms__btn--2 btn btn-grey-upper-text"
+                    type="button"
+                  >
+                    print a quote
+                  </button>
+                </div>
               </section>
             </div>
           </form>
