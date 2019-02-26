@@ -555,6 +555,7 @@
   color: $slate;
   cursor: pointer;
   transition: 0.25s;
+  text-align: center;
 }
 
 .tone__icon {
@@ -617,6 +618,10 @@
   display: flex;
   flex-wrap: wrap;
   margin: 20px 0;
+
+  @media screen and (max-width: 658px) {
+    margin: 0;
+  }
 }
 
 .user__input-wrapper-inner {
@@ -633,12 +638,14 @@
 
 .user__payment-label {
   position: relative;
-  padding: 30px 50px;
+  padding: 25px 45px;
   border: 1px solid $lightSteel;
   background-color: $whiteSmoke2;
   border-radius: 3px;
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.2s; 
+  min-width: 234px;
+  text-align: center;
 
   &:hover {
     @include defaultHover();

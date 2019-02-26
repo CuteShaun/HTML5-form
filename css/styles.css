@@ -1202,7 +1202,8 @@ input[type="file"]:focus + label {
   cursor: pointer;
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
-  transition: 0.25s; }
+  transition: 0.25s;
+  text-align: center; }
 
 .tone__icon {
   margin-right: 10px; }
@@ -1326,6 +1327,9 @@ input[type="file"]:focus + label {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin: 20px 0; }
+  @media screen and (max-width: 658px) {
+    .user__input-wrapper-outer {
+      margin: 0; } }
 
 .user__input-wrapper-inner {
   position: relative;
@@ -1344,7 +1348,7 @@ input[type="file"]:focus + label {
 
 .user__payment-label {
   position: relative;
-  padding: 30px 50px;
+  padding: 25px 45px;
   border: 1px solid #abb4cd;
   background-color: #f7f7f9;
   -webkit-border-radius: 3px;
@@ -1352,7 +1356,9 @@ input[type="file"]:focus + label {
   cursor: pointer;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
-  transition: 0.2s; }
+  transition: 0.2s;
+  min-width: 234px;
+  text-align: center; }
   .user__payment-label:hover {
     -webkit-box-shadow: 2px 2px 15px -4px #6e768f;
             box-shadow: 2px 2px 15px -4px #6e768f; }
@@ -1877,15 +1883,21 @@ input[type="file"]:focus + label {
   color: #6e768f; }
   .user__input--long {
     min-width: 325px; }
-    @media (max-width: 620px) {
+    @media (max-width: 500px) {
       .user__input--long {
-        min-width: 250px; } }
+        min-width: 234px; } }
   .user__input--medium {
     max-width: 190px;
     min-width: 0; }
+    @media (max-width: 500px) {
+      .user__input--medium {
+        min-width: 234px; } }
   .user__input--short {
-    max-width: 110px;
-    min-width: 0; }
+    width: 110px;
+    max-width: 110px; }
+    @media (max-width: 500px) {
+      .user__input--short {
+        min-width: 110px; } }
   .user__input::-webkit-input-placeholder {
     color: #6e768f; }
   .user__input:-ms-input-placeholder {

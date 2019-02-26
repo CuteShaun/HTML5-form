@@ -34,19 +34,27 @@
   &--long {
     min-width: 325px;
 
-    @media (max-width: 620px) {
-      min-width: 250px;
+    @media (max-width: 500px) {
+      min-width: 234px;
     }
   }
 
   &--medium {
     max-width: 190px;
     min-width: 0;
+
+    @media (max-width: 500px) {
+      min-width: 234px;
+    }
   }
 
   &--short {
+    width: 110px;
     max-width: 110px;
-    min-width: 0;
+
+    @media(max-width: 500px) {
+      min-width: 110px;
+    }
   }
 
   &::placeholder {
@@ -71,3 +79,4 @@
     }
   }
 }
+
