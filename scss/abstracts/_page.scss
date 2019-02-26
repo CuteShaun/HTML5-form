@@ -632,6 +632,10 @@
   position: relative;
   display: inline-block;
   margin: 1.5rem 2rem 0 0;
+
+  @media screen and (max-width: 410px) {
+    margin-right: 0;
+  }
 }
 
 .user__payment {

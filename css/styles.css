@@ -1341,6 +1341,9 @@ input[type="file"]:focus + label {
   position: relative;
   display: inline-block;
   margin: 1.5rem 2rem 0 0; }
+  @media screen and (max-width: 410px) {
+    .user__input-wrapper-inner {
+      margin-right: 0; } }
 
 .user__payment {
   margin: 50px 0 35px 0;
