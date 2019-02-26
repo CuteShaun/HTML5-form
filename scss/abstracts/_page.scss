@@ -164,7 +164,7 @@
   flex-direction: column;
   padding-left: 6rem;
 
-  @media (min-width: 740px) and (max-width: 940px) {
+  @media (max-width: 940px) {
     justify-content: center;
   }
 
@@ -172,9 +172,14 @@
     padding-left: 0;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 739px) {
     align-items: center;
   }
+}
+
+.help__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .help__title {

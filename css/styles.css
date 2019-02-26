@@ -600,7 +600,7 @@ input[type="file"]:focus + label {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 6rem; }
-  @media (min-width: 740px) and (max-width: 940px) {
+  @media (max-width: 940px) {
     .help {
       -webkit-box-pack: center;
       -webkit-justify-content: center;
@@ -609,12 +609,23 @@ input[type="file"]:focus + label {
   @media (max-width: 739px) {
     .help {
       padding-left: 0; } }
-  @media (max-width: 720px) {
+  @media (max-width: 739px) {
     .help {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; } }
+
+.help__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .help__title {
   position: relative; }
