@@ -555,6 +555,7 @@
                       title="Write your payment card number"
                       name="input-card-num"
                       id="card-number"
+                      inputmode="numeric"
                       pattern="^[0-9]+$"
                       minlength="16"
                       maxlength="16"
@@ -583,7 +584,9 @@
                     <span class="status-icon"></span>
                   </div>
 
-                  <div class="user__input-wrapper-inner">
+                  <div
+                    class="user__input-wrapper-inner user__input-wrapper-inner--auto"
+                  >
                     <label
                       class="fifth-heading fifth-heading--payment user__label"
                       for="code"
@@ -599,6 +602,7 @@
                       minlength="3"
                       maxlength="4"
                       pattern="^[0-9]+$"
+                      inputmode="numeric"
                       required
                     />
 
